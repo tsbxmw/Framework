@@ -1,0 +1,30 @@
+{
+    "bins":[
+        "android",
+        "ios",
+        "linux",
+        "win32"
+    ],
+    "android":[
+        "base/bins/android",
+        "base/bins/android/apk",
+        "base/bins/android/sh"
+    ],
+    "ios":[
+        "base/bins/ios",
+        "base/bins/ios/sh"
+    ],
+    "linux":[
+        "base/bins/linux/",
+        "base/bins/linux/exe",
+        "base/bins/linux/sh"
+    ],
+    "win32":[
+        "base/bins/win32",
+        "base/bins/win32/exe",
+        "base/bins/win32/bat",
+        "base/bins/win32/exe/getVideo",
+        "base/bins/win32/exe/openssl",
+        "base/bins/win32/exe/log"
+    ]
+}
