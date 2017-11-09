@@ -10,3 +10,4 @@ from .File import *
 from .IPCamera import *
 from .Log import *
 from .NetWork import *
+from .Exceptions import  *
