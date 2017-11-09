@@ -1,2 +1,3 @@
+# _*_ coding = utf-8 _*_
 
-from .Update import Update
+from . import Update
