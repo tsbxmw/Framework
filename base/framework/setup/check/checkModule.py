@@ -32,7 +32,7 @@ class CheckModule(object):
     def checkAllModule(self):
         func_name_ = "checkSystemEnv"
         self.ls.log_print("system", func_name_ + " start now...")
-        if self.checkModule("paramiko"):            
+        if self.checkModule("sys"):            
             return True
         else :
             return False
