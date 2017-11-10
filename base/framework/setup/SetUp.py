@@ -15,6 +15,16 @@ from update.Update import Update
 
 class SetUp(object):
     def __init__(self):
+
+        self.func_name = "SetUp"
+        
+        localpath = os.path.split(os.path.realpath(__file__))[0]
+        
+        sys.path.append(os.path.abspath(os.path.join(localpath,"..\\system")))
+
+        from framework_tool import Framework_Tool as FT
+        ft = FT()
+        self.ls = ft.getLog(self.func_name)
         pass
         
     def run(self):
@@ -32,7 +42,7 @@ class SetUp(object):
             else:
                 pass
         else:
-            print("<<<framework-error>>> failed when check !!!!")
+            self.ls.log_print("error","<<<framework-error>>> failed when check !!!!")
 
         
 
