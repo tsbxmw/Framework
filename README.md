@@ -1,4 +1,4 @@
-# *[AutoTest Framework](autotest.wang)
+# [AutoTest Framework](autotest.wang)
 make autotest easy and better
 
 # About
@@ -18,7 +18,7 @@ Use AutoTest Framework to automate your testcases so you can focus on coding rat
 
 # Downloads
 
-*[ZIP](https://codeload.github.com/tsbxmw/Framework/zip/master)
+[ZIP](https://codeload.github.com/tsbxmw/Framework/zip/master)
 
 # Source
 
@@ -26,7 +26,7 @@ Use AutoTest Framework to automate your testcases so you can focus on coding rat
 
 # Website
 
-*[autotest.wang](http://autotest.wang)
+[autotest.wang](http://autotest.wang)
 
 # License
 
