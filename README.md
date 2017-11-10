@@ -1,6 +1,8 @@
 # [AutoTest Framework](http://autotest.wang)
 make autotest easy and better
 
+[![Build Status](https://travis-ci.org/tsbxmw/Framework.svg?branch=master)](https://travis-ci.org/tsbxmw/Framework)
+
 # About
 
 AutoTest Framwork is an easy use automation framwork. Build with Python, it provides lots of features to support 
