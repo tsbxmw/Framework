@@ -21,5 +21,17 @@ class CheckOther(object):
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
-        self.ls.log_print("system", "run over...")
-        self.ls.log_print("system", "=====================================")
+        if self.checkOther():
+            self.ls.log_print("system", "run over...")
+            self.ls.log_print("system", "=====================================")
+            return True
+        else:
+            return False
+        
+    def checkOther(self):
+        func_name_ = "checkOther"
+        self.ls.log_print("system", func_name_ + " start now...")
+        if True:    
+            return True
+        else :
+            return False

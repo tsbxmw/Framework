@@ -37,10 +37,29 @@ class Check(object):
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
-        self.check_env.run()
-        self.check_file.run()
-        self.check_module.run()
-        self.check_other.run()
-        self.check_tool.run()
-        self.check_case.run()
+        if self.check_file.run():
+            pass
+        else:
+            return False
+        if self.check_env.run():
+            pass
+        else:
+            return False
+        if self.check_module.run():
+            pass
+        else:
+            return False
+        if self.check_other.run():
+            pass
+        else:
+            return False
+        if self.check_tool.run():
+            pass
+        else:
+            return False
+        if self.check_case.run():
+            pass
+        else:
+            return False
+        return True
         self.ls.log_print("system", "=====================================")

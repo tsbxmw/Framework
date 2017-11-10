@@ -21,5 +21,30 @@ class CheckModule(object):
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
-        self.ls.log_print("system", "run over...")
-        self.ls.log_print("system", "=====================================")
+        if self.checkAllModule():
+            self.ls.log_print("system", "run over...")
+            self.ls.log_print("system", "=====================================")
+            return True
+        else:
+            return False
+
+        
+    def checkAllModule(self):
+        func_name_ = "checkSystemEnv"
+        self.ls.log_print("system", func_name_ + " start now...")
+        if self.checkModule("paramiko"):            
+            return True
+        else :
+            return False
+
+    def checkModule(self, name):
+        func_name_ = "checkPath"
+        
+        try:
+            __import__(name)
+            
+            self.ls.log_print("system", name + " is installed, check ok")
+            return True
+        except Exception, e:            
+            self.ls.log_print("system", name + " is not installed, check faile")
+            return False

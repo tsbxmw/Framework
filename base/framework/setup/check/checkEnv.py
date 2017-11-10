@@ -17,5 +17,28 @@ class CheckEnv(object):
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
-        self.ls.log_print("system", "run over...")
-        self.ls.log_print("system", "=====================================")
+        if self.checkSystemEnv():
+
+            self.ls.log_print("system", "run over...")
+            self.ls.log_print("system", "=====================================")
+            return True
+        else:
+            return False
+
+    def checkSystemEnv(self):
+        func_name_ = "checkSystemEnv"
+        self.ls.log_print("system", func_name_ + " start now...")
+        if self.checkPath("Python"):
+            return True
+        else :
+            return False
+
+    def checkPath(self, name):
+        func_name_ = "checkPath"
+        path = os.environ.get("PATH")  
+        if name in path:
+            self.ls.log_print("system", name + " check ok")
+            return True
+        else:
+            self.ls.log_print("system", name + " check fail")
+            return False
