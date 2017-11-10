@@ -1,0 +1,41 @@
+ {
+     "files":[
+         "base/framework/setup/__init__.py",
+         "base/framework/setup/SetUp.py",
+
+         "base/framework/setup/check/__init__.py",
+         "base/framework/setup/check/Check.py",
+         "base/framework/setup/check/checkCase.py",
+         "base/framework/setup/check/checkEnv.py",
+         "base/framework/setup/check/checkFile.py",
+         "base/framework/setup/check/checkModule.py",
+         "base/framework/setup/check/checkOther.py",
+         "base/framework/setup/check/checkTool.py",
+
+         
+         "base/framework/setup/set/__init__.py",
+         "base/framework/setup/set/Set.py",
+
+         "base/framework/setup/update/__init__.py",
+         "base/framework/setup/update/Update.py",
+         "base/framework/setup/update/updateCase.py",
+         "base/framework/setup/update/updateEnv.py",
+         "base/framework/setup/update/updateFile.py",
+         "base/framework/setup/update/updateModule.py",
+         "base/framework/setup/update/updateOther.py",
+         "base/framework/setup/update/updateTool.py",
+
+         "base/framework/system/config/system.json",
+
+         "base/framework/system/Exceptions/__init__.py",
+         "base/framework/system/Exceptions/Exceptions.py",
+
+         "base/framework/system/Log/__init__.py",
+         "base/framework/system/Log/LogShow.py",
+         
+         "base/framework/system/__init__.py",
+         "base/framework/system/framework_tool.py"
+
+
+     ]
+ }
