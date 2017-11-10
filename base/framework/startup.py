@@ -11,6 +11,7 @@ from setup.SetUp import SetUp
 
 class startup(object):
     def __init__(self):
+        self.func_name = "startup"
         self.setup_ = SetUp()
         
         localpath = os.path.split(os.path.realpath(__file__))[0]

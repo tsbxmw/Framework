@@ -6,9 +6,7 @@ import os, time, sys
 class CheckCase(object):
     def __init__(self):
         localpath = os.path.split(os.path.realpath(__file__))[0]
-        
         sys.path.append(os.path.abspath(os.path.join(localpath,"..\\..\\system")))
-
         from framework_tool import Framework_Tool as FT
         ft = FT()
         self.func_name = "CheckCase"
