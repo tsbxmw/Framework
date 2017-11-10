@@ -1,4 +1,4 @@
-# [AutoTest Framework](autotest.wang)
+# [AutoTest Framework](http://autotest.wang)
 make autotest easy and better
 
 # About
