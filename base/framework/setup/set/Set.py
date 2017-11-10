@@ -7,3 +7,7 @@ class Set(object):
         pass
     def run(self):
         pass
+
+    def setEnv(self):
+        pass
+        

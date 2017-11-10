@@ -28,8 +28,7 @@ class CheckEnv(object):
     def checkSystemEnv(self):
         func_name_ = "checkSystemEnv"
         self.ls.log_print("system", func_name_ + " start now...")
-        if self.checkPath("Python"):
-            return True
+        if self.checkPath("Python"):            return True
         else :
             return False
 

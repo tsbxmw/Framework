@@ -26,11 +26,11 @@ class SetUp(object):
             if _set.run():
                 pass
             else:
-                Exceptions.show()
+                pass
             if _update.run():
                 pass
             else:
-                Exceptions.show()
+                pass
         else:
             print("<<<framework-error>>> failed when check !!!!")
 
