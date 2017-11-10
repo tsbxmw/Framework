@@ -1,23 +1,33 @@
-# Framework
-Auto test framework
+# *[AutoTest Framework](autotest.wang)
+make autotest easy and better
 
-## Auto Build
+# About
 
-* using this Framework would be good to build your object, if you using the jenkins.
-* should not create a new job to build, just need moidfy the config and build the source file.
+AutoTest Framwork is an easy use automation framwork. Build with Python, it provides lots of features to support 
+automating, so that anyone can build a automation framwork to test their app or sdk or framework without creating 
+a new framework for testting.
 
-## Auto Test
+# What to Use AutoTest Framework for and When to Use It
 
-* easy test and easy create.
+Use AutoTest Framework to automate your testcases so you can focus on coding rather than testting
 
-## Auto Result Analysis
+- Auto Test
+- Generate Report
+- Result Analysis
+- etc...
 
-* result auto analysis and upload to server.
+# Downloads
 
-## Atuo Show 
+*[ZIP](https://codeload.github.com/tsbxmw/Framework/zip/master)
 
-* show the result in web 
+# Source
 
-## Auto Notification
+ GIT : git clone https://github.com/tsbxmw/Framework.git 
 
-* email 
+# Website
+
+*[autotest.wang](http://autotest.wang)
+
+# License
+
+see the main page
