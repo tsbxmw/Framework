@@ -25,6 +25,3 @@ echo =      Sorry, can not find the startupsystem.py file, check please        =
 echo ===========================================================================
 )
 
-
-
-pause
