@@ -2,7 +2,7 @@
 make autotest easy and better
 
 [![Build Status](https://travis-ci.org/tsbxmw/Framework.svg?branch=master)](https://travis-ci.org/tsbxmw/Framework)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/wt66q1ifhy7p9fq6?svg=true)](https://ci.appveyor.com/project/tsbxmw/framework)
 # About
 
 AutoTest Framwork is an easy use automation framwork. Build with Python, it provides lots of features to support 
