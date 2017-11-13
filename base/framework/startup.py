@@ -23,6 +23,5 @@ class startup(object):
         self.ls = ft.getLog(self.func_name)
 
     def run(self):
-
         self.setup_.run()
 

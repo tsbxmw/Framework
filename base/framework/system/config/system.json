@@ -35,7 +35,21 @@
          
          "base/framework/system/__init__.py",
          "base/framework/system/framework_tool.py"
-
+     ],
+     "env":[
+        "Python"
+     ],
+     "module":[
+        "sys",
+        "time",
+        "json",
+        "datetime"
+     ],
+     "other":[
+        "example"
+     ],
+     "tool":[
 
      ]
+
  }

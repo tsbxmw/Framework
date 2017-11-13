@@ -53,3 +53,12 @@ class LogShow(object):
 
     def log_save_to_file(self, local, name):
         print "debug model"
+
+    def log_print_func(self, func_name, rank, log_str):
+        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") {" + func_name 
+        + "} " + str(log_str)
+        print log_string
+    
+    def log_print_color(self, rank, log_str):
+        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ")" + str(log_str)
+        print log_string

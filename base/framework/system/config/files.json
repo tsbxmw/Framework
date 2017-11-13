@@ -1,0 +1,7 @@
+{
+    "root_path":"base/config/json/",
+    "files":[
+        "bins.json",
+        "libs.json"
+    ]
+}

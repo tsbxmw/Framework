@@ -1,30 +1,37 @@
 {
-    "bins":[
-        "android",
-        "ios",
-        "linux",
-        "win32"
+    "root_path":"base/bins/",
+    "dir":[
+        "android/apk",
+        "android/sh",
+        "ios/sh",
+        "linux/exe",
+        "linux/sh",
+        "win32/bat",
+        "win32/exe"
     ],
-    "android":[
-        "base/bins/android",
-        "base/bins/android/apk",
-        "base/bins/android/sh"
+    "base/bins/android/apk":[
+
     ],
-    "ios":[
-        "base/bins/ios",
-        "base/bins/ios/sh"
+    "base/bins/android/sh":[
+        
     ],
-    "linux":[
-        "base/bins/linux/",
-        "base/bins/linux/exe",
-        "base/bins/linux/sh"
+    "base/bins/ios/sh":[
+        
     ],
-    "win32":[
-        "base/bins/win32",
-        "base/bins/win32/exe",
-        "base/bins/win32/bat",
-        "base/bins/win32/exe/getVideo",
-        "base/bins/win32/exe/openssl",
-        "base/bins/win32/exe/log"
+    "base/bins/linux/exe":[
+        
+    ],
+    "base/bins/linux/sh":[
+        
+    ],
+    "base/bins/win32/bat":[
+        
+    ],
+    "base/bins/win32/exe":[
+        "getVideo/HIKVision/getlog.exe",
+        "openssl/libeay32.dll",
+        "openssl/openssl.exe",
+        "ssleay32.dll"
     ]
+
 }
