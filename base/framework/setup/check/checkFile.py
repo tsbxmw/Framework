@@ -44,7 +44,7 @@ class CheckFile(object):
             sys.exit(1)
         
         f_open = open(self.system_json_path)
-        for file_line in json.load(f_open)["files"]:
+        for file_line in json.load(f_open)["check"]["files"]:
             if self.checkIsExists(self.rootpath + file_line):
                 continue
             else:               

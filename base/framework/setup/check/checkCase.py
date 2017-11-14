@@ -17,7 +17,6 @@ class CheckCase(object):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
         if self.checkCase():
-
             self.ls.log_print("system", "run over...")
             self.ls.log_print("system", "=====================================")
             return True

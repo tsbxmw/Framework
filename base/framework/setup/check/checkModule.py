@@ -34,7 +34,7 @@ class CheckModule(object):
         func_name_ = "checkSystemEnv"
         self.ls.log_print("system", func_name_ + " start now...")
         f_open = open(self.system_json_path)
-        for file_line in json.load(f_open)["module"]:
+        for file_line in json.load(f_open)["check"]["module"]:
             if self.checkModule(file_line):  
                 continue
             else:               
