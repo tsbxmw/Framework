@@ -17,7 +17,6 @@ class startup(object):
         localpath = os.path.split(os.path.realpath(__file__))[0]
         
         sys.path.append(os.path.abspath(os.path.join(localpath,"system")))
-
         from framework_tool import Framework_Tool as FT
         ft = FT()
         self.ls = ft.getLog(self.func_name)
