@@ -36,4 +36,4 @@ see the main page
 
 # How to use it?
 
-see [mengweibbs.cn](mengweibbs.cn) to find out
+[mengweibbs.cn](http://mengweibbs.cn)
