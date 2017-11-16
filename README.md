@@ -33,3 +33,7 @@ Use AutoTest Framework to automate your testcases so you can focus on coding rat
 # License
 
 see the main page
+
+# How to use it?
+
+see [mengweibbs.cn](mengweibbs.cn) to find out
