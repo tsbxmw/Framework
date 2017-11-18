@@ -16,6 +16,7 @@ from File.FileWrite import FileWrite
 
 from NetWork.SFTP import Sftp
 from NetWork.SSH import Ssh
+from service.service import Service
 
 
 
@@ -46,6 +47,9 @@ class Framework_Tool(object):
 
     def getFileWrite(self):
         return FileWrite()
+
+    def getService(self):
+        return Service()
 
     def getSftp(self, ip, user, passwd):
         return Sftp(ip, user, passwd)

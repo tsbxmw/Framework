@@ -19,3 +19,8 @@ class UpdateCase(object):
         self.ls.log_print("system", "run now...")
         self.ls.log_print("system", "run over...")
         self.ls.log_print("system", "=====================================")
+
+
+    def UpdateCase(self):
+        func_name = "updatecase"
+        self.ls.log_print("system", "update case now")
