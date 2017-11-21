@@ -34,9 +34,19 @@
    
             "base/framework/system/Log/__init__.py",
             "base/framework/system/Log/LogShow.py",
+
+            "base/framework/system/NetWork/__init__.py",
+            "base/framework/system/NetWork/SFTP.py",
+            "base/framework/system/NetWork/SSH.py",
+            
+            "base/framework/system/service/__init__.py",            
+            "base/framework/system/service/service.py",
+            "base/framework/system/service/SNetwork.py",
             
             "base/framework/system/__init__.py",
             "base/framework/system/framework_tool.py"
+
+
         ],
         "env":[
            "Python"
