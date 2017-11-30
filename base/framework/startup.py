@@ -23,5 +23,11 @@ class startup(object):
 
     def run(self):
         self.setup_.run()
+   
+if __name__ == "__main__":
+    print("this is local test in startup at Framework")
+    startup = startup()
+    startup.run()
+    
         
 
