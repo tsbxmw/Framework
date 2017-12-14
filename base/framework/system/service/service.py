@@ -19,4 +19,10 @@ class Service(object):
     def check_service(self):
         self.ls.log_print("system", "check service now...")
 
+    def check_base(self):
+        self.ls.log_print("system", "check base service now...")
+
+    def check_network(self):
+        self.ls.log_print("system", "check network service now...")
+
         
