@@ -25,4 +25,8 @@ class Service(object):
     def check_network(self):
         self.ls.log_print("system", "check network service now...")
 
+    def run(self):
+        self.ls.log_pring("system", "run system service now ...")
+        
+
         
