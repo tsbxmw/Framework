@@ -62,3 +62,6 @@ class LogShow(object):
     def log_print_color(self, rank, log_str):
         log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ")" + str(log_str)
         print log_string
+        
+    def log_print_level(self, level, rank, log_str):
+        log_string = self.log_getsystime() + " [ " + level + "-" + rank + " ] (" + self.log_rank[rank] + ") + str(log_str)
