@@ -5,6 +5,8 @@
 # date : 20171107
 # author : wei.meng
 # function : copy file from path1 to path2
+# copy is work good to local file 
+# xcopy is work good to remote files (dir)
 '''
 
 from NetWork import Sftp
