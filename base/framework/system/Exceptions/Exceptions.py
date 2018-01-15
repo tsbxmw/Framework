@@ -1,7 +1,8 @@
 # _*_ coding: utf-8 _*_
 
 """
-    define Exceptions
+    # define Exceptions
+    # exceptions of io, file, base, system, check, log, network, tool, service
 """
 import os, time, json, sys
 
@@ -21,7 +22,6 @@ class Exceptions(object):
             pass
         else:
             pass
-
 
     
         
