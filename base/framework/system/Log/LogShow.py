@@ -64,4 +64,4 @@ class LogShow(object):
         print log_string
         
     def log_print_level(self, level, rank, log_str):
-        log_string = self.log_getsystime() + " [ " + level + "-" + rank + " ] (" + self.log_rank[rank] + ") + str(log_str)
+        log_string = self.log_getsystime() + " [ " + level + "-" + rank + " ] (" + self.log_rank[rank] + ")" + str(log_str)
