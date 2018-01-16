@@ -16,6 +16,8 @@ Use AutoTest Framework to automate your testcases so you can focus on coding rat
 - Auto Test
 - Generate Report
 - Result Analysis
+- Result Show and Compare
+- System information gather
 - etc...
 
 # Downloads
