@@ -2,6 +2,8 @@
 
 '''
 # define startup system
+# test system start function
+# run()
 '''
 
 
