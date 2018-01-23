@@ -21,10 +21,10 @@ import time
 from Log import LogShow
 
 class Sftp(object):
-    def __init__(self, ipadd, user, passwd):    
+    def __init__(self):
         self.ls = LogShow("SFTP")
 
-    def Connect(self):
+    def Connect(self, ipadd, user, passwd):
         try:            
             self.ip = ipadd    
             self.username = user

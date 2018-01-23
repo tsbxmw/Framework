@@ -48,20 +48,45 @@ class LogShow(object):
         return time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time()) )
 
     def log_print(self, rank, log_str):
-        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") " + str(log_str)
-        print log_string
-
-    def log_save_to_file(self, local, name):
-        print "debug model"
+        self.log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") " + str(log_str)
+        print self.log_string
 
     def log_print_func(self, func_name, rank, log_str):
-        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") {" + func_name 
-        + "} " + str(log_str)
+        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") {" + func_name + "} " + str(log_str)
         print log_string
-    
+
+    def log_print_func_success(self, func_name, rank):
+        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") {" + func_name + "} " + str("success !")
+        print log_string
+
+    def log_print_func_failed(self, func_name, rank):
+        log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ") {" + func_name + "} " + str("failed !")
+        print log_string
+
     def log_print_color(self, rank, log_str):
         log_string = self.log_getsystime() + " [ " + self.logflag + " ] (" + self.log_rank[rank] + ")" + str(log_str)
         print log_string
         
     def log_print_level(self, level, rank, log_str):
         log_string = self.log_getsystime() + " [ " + level + "-" + rank + " ] (" + self.log_rank[rank] + ")" + str(log_str)
+
+    def log_file_read(self, local, name):
+        try:
+            if os.path.exists(local + "/" + name):
+                files = open(local + "/" + name, "r")
+                for line in files.readlines():
+                    print line
+                files.close()
+        except Exception, e:
+            print str(e)
+            raise e
+
+    def log_save_to_file(self, local, name):
+        #print "|--> debug model"
+        try:
+            files = open(local+ "/" + name, "a")
+            files.write(self.log_string)
+            files.close()
+        except Exception,e:
+            print str(e)
+            raise e
