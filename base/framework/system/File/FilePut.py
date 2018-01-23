@@ -60,4 +60,7 @@ class FilePut(object):
         try:
             None
         except Exception,e:
-            self.ls.log_print("error", "[SHAREGET] failed with " + str(e))
+            self.ls.log_print("error", "[FTPPUT] failed with " + str(e))
+
+    def OtherPUT(self, remote, local):
+        self.ls.log_print("error", "[OtherPUT] sorry , we have not support this yet !")

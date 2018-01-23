@@ -64,7 +64,7 @@ class FileRead(object):
             f_open.close()
         except Exception, e:
             self.ls.log_print("error", "[read_json] failed with " + str(e))
-            return {}
+            return None
     
     def read_xml(self, filename):
         try:
@@ -72,7 +72,7 @@ class FileRead(object):
             return tree
         except Exception, e:
             self.ls.log_print("error", "[read_xml] failed with " + str(e))
-            return {}
+            return None
     
     def read_ini(self, filename):
         try:
@@ -81,7 +81,7 @@ class FileRead(object):
             return cp
         except Exception, e:
             self.ls.log_print("error", "[read_ini] failed with " + str(e))
-            return {}
+            return None
     
     def read_txt(self, filename):
         try:
@@ -90,7 +90,7 @@ class FileRead(object):
             f_open.close()
         except Exception, e:
             self.ls.log_print("error", "[read_txt] failed with " + str(e))
-            return {}
+            return None
     
     def read_other(self, filename):
         try:
@@ -99,4 +99,4 @@ class FileRead(object):
             f_open.close()
         except Exception, e:
             self.ls.log_print("error", "[read_other] failed with " + str(e))
-            return {}
+            return None
