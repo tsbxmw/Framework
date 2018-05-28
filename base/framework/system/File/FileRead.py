@@ -105,4 +105,6 @@ class FileRead(object):
     def read_xlsx(slef, filename):
         try:
             f_open = xlrd.open_workbook(filename)
-            f_open.get_sheets[1]
+            f_open.get_sheets()[1]
+        except Exception,e:
+            return None
