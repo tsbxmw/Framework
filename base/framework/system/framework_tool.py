@@ -1,4 +1,9 @@
+#! /usr/bin/bash
 
+'''
+define framework tool 
+
+'''
 
 import os, sys, time, json
 
@@ -22,6 +27,10 @@ from tools.tools import Tools
 
 
 
+'''
+Framework_Tool()
+return the tool object
+'''
 class Framework_Tool(object):
     def __init__(self):
         pass
@@ -62,4 +71,7 @@ class Framework_Tool(object):
     def log_print(self, func_name, level, logstr):
         self.ls = LogShow(func_name)
         self.ls.log_print(level, logstr)
+
+
+    
 

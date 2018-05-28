@@ -21,14 +21,16 @@ import time
 from Log import LogShow
 
 class Sftp(object):
-    def __init__(self):
+    def __init__(self, ipadd, user, passwd):
+        self.ip = ipadd    
+        self.username = user
+        self.password = passwd
         self.ls = LogShow("SFTP")
 
-    def Connect(self, ipadd, user, passwd):
+    # update the connection with every Connect()
+    # now, just using deferent sftp class to get or put file!
+    def Connect(self):
         try:            
-            self.ip = ipadd    
-            self.username = user
-            self.password = passwd
             self.ls.log_print("system", "[Sftp connect] " + str(self.ip))
             self.sftp = paramiko.Transport(self.ip,22)
             self.sftp.connect(username=self.username,password=self.password)
@@ -36,6 +38,7 @@ class Sftp(object):
         except Exception,e:
             self.ls.log_print("system", "[Sftp connect] : wrong with it -- " + str(e))
 
+    # upload file to the remote
     def PutFile(self,localfile,remotefile):
         try:
             self.ls.log_print("system","[Sftp PutFile] : " + str(localfile) + " ====> " + str(remotefile))
@@ -44,6 +47,7 @@ class Sftp(object):
         except Exception,e:
             self.ls.log_print("system","[Sftp PutFile] : wrong with it -- " + str(e))
 
+    # download file from the remote
     def GetFile(self,remotefile,localfile):
         try:
             self.ls.log_print("system","[Sftp GetFile] : " + str(localfile) + " <==== " + str(remotefile))
@@ -52,5 +56,6 @@ class Sftp(object):
         except Exception,e:
             self.ls.log_print("system", "[Sftp GetFile] : wrong with -- " + str(e))
             
+    # Close the connection
     def Close(self):
         self.sftp.close()

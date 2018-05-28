@@ -32,7 +32,9 @@ class Check(object):
         from framework_tool import Framework_Tool as FT
         ft = FT()
         self.ls = ft.getLog(self.func_name)
-        
+    
+    def __str__(self):
+        return "Check"
 
     def run(self):
         self.ls.log_print("system", "--------------------------------------")

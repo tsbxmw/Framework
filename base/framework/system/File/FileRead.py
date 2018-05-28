@@ -12,6 +12,7 @@ import sys, time
 from Log import LogShow
 import xml.etree.cElementTree as ET
 import ConfigParser as CP
+import xlrd
 
 class FileRead(object):
 
@@ -100,3 +101,8 @@ class FileRead(object):
         except Exception, e:
             self.ls.log_print("error", "[read_other] failed with " + str(e))
             return None
+
+    def read_xlsx(slef, filename):
+        try:
+            f_open = xlrd.open_workbook(filename)
+            f_open.get_sheets[1]

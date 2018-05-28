@@ -22,11 +22,9 @@ class SetCase(object):
             return True
         else:
             return False
-
-    
      
     def SetCase(self):
-        func_name_ = "SetTool"
+        func_name_ = "SetCase"
         self.ls.log_print("system", func_name_ + " start now...")
         if True:          
              return True

@@ -22,5 +22,6 @@ class UpdateCase(object):
 
 
     def UpdateCase(self):
-        func_name = "updatecase"
+        func_name = "UpdateCase"
         self.ls.log_print("system", "update case now")
+        

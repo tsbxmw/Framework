@@ -17,8 +17,6 @@ class CheckModule(object):
         self.ls = ft.getLog(self.func_name)
         self.system_json_path = os.path.abspath(os.path.join(self.localpath,"..\\..\\system\\config\\system.json"))
 
-        
-
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
@@ -28,7 +26,6 @@ class CheckModule(object):
             return True
         else:
             return False
-
         
     def checkAllModule(self):
         func_name_ = "checkSystemEnv"
@@ -45,7 +42,6 @@ class CheckModule(object):
 
     def checkModule(self, name):
         func_name_ = "checkModule"
-        
         try:
             __import__(name)
             

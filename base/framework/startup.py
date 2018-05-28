@@ -2,6 +2,8 @@
 
 """
 define Framework start up
+this is the startup() function define and test
+using run() function to startup all the framework system
 """
 
 import sys, os
@@ -25,9 +27,9 @@ class startup(object):
         self.setup_.run()
    
 if __name__ == "__main__":
-    print("this is local test in startup at Framework")
+    print("[startup] DEBUG this is local test in startup at Framework")
     startup = startup()
     startup.run()
-    print("running now ...")
+    print("[startup] DEBUG running now ...")
         
 

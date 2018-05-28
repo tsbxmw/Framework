@@ -51,11 +51,7 @@ class CheckFile(object):
                 self.ls.log_print("system", func_name_ + " failed when check ! ")
                 return False
         f_open.close()
-
-
         return True
-
-
 
     def checkIsFile(self, filename):
         func_name_ = "checkSystemFile"

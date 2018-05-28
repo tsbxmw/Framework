@@ -23,5 +23,9 @@ class Exceptions(object):
         else:
             pass
 
+class BaseException(object):
+    def __init__(self):
+        self.func_name = "Exceptions"
+
     
         
