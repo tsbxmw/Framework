@@ -5,7 +5,7 @@ python:
 install:
   - pip install paramiko
   - pip install xlrd
-  - pip install xlwr
+  - pip install xlwt
 # command to run tests
 script:
   - # or py.test for Python versions 3.5 and below

@@ -11,8 +11,6 @@ from updateOther import UpdateOther
 from updateTool import UpdateTool
 
 
-
-
 class Update(object):
     def __init__(self):
         self.func_name = "update"
@@ -24,7 +22,6 @@ class Update(object):
         self.update_tool = UpdateTool()
         self.update_env = UpdateEnv()
 
-        
         localpath = os.path.split(os.path.realpath(__file__))[0]
         sys.path.append(os.path.abspath(os.path.join(localpath,"..\\..\\system")))
         from framework_tool import Framework_Tool as FT
