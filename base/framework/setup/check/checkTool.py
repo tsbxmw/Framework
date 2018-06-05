@@ -2,9 +2,6 @@
 
 import os, time, sys
 
-
-
-
 class CheckTool(object):
     def __init__(self):
         
@@ -18,7 +15,6 @@ class CheckTool(object):
         ft = FT()
         self.ls = ft.getLog(self.func_name)
         
-
     def run(self):
         self.ls.log_print("system", "--------------------------------------")
         self.ls.log_print("system", "run now...")
@@ -29,8 +25,6 @@ class CheckTool(object):
         else:
             return False
 
-        
-     
     def checkTool(self):
         func_name_ = "checkTool"
         self.ls.log_print("system", func_name_ + " start now...")
